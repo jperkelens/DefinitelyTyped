@@ -56,6 +56,7 @@ declare module "bunyan" {
         stream?: NodeJS.WritableStream;
         serializers?: Serializers;
         src?: boolean;
+	[key: string]: any;
     }
 
 	interface Serializer {
