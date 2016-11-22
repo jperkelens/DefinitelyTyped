@@ -1,6 +1,7 @@
 // Type definitions for node-bunyan
 // Project: https://github.com/trentm/node-bunyan
 // Definitions by: Alex Mikhalev <https://github.com/amikhalev>
+// Definitions by: JP Erkelens <https://github.com/jperkelens>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 /// <reference types="node" />
@@ -56,6 +57,7 @@ interface LoggerOptions {
     stream?: NodeJS.WritableStream;
     serializers?: Serializers | StdSerializers;
     src?: boolean;
+    [key: string]: any;
 }
 
 	interface Serializer {

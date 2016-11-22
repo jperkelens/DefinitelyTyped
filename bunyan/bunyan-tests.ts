@@ -51,7 +51,8 @@ var options:bunyan.LoggerOptions = {
         type: 'raw',
         stream: ringBuffer,
         level: bunyan.ERROR
-    }]
+    }],
+    customField: 'field'
 };
 
 var log = bunyan.createLogger(options);
